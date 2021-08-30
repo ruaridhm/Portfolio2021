@@ -2,6 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import { GithubOutline, EmailOutline } from "@styled-icons/evaicons-outline"
 import { Linkedin } from "@styled-icons/boxicons-logos"
+import Scroll from "./Scroll"
+
+const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+`
 
 const SocialLinks = styled.div`
   display: flex;
@@ -30,7 +36,7 @@ const EmailIcon = styled(EmailOutline)`
 `
 const Contact = () => {
   return (
-    <section>
+    <Section>
       <h2>&lt;contact&gt;</h2>
       <SocialLinks>
         <SocialLink href="http://www.github.com/ruaridhm" target="_blank">
@@ -48,7 +54,8 @@ const Contact = () => {
         </SocialLink>
       </SocialLinks>
       <h2>&lt;/contact&gt;</h2>
-    </section>
+      <Scroll showBelow={250} />
+    </Section>
   )
 }
 

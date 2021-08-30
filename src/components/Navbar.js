@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
   width: 100%;
   position: absolute;
   color: white;
-  z-index: 1;
+  z-index: 2;
   height: 5rem;
 `
 const SiteLogo = styled.a`

@@ -2,7 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const HeaderShadow = styled.div`
+  z-index: 1;
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  position: relative;
+  top: 0px;
+  left: 0px;
 `
 const Header = styled.header`
   background: linear-gradient(180deg, #37319b, #711bce);
@@ -13,6 +17,11 @@ const Header = styled.header`
   align-items: center;
   flex-direction: column;
   box-shadow: 10px 10px 5px grey;
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 `
 const IntroWrapper = styled.div`
   display: flex;
@@ -27,10 +36,10 @@ const Wave = styled.div`
   user-select: none;
 
   &:hover {
-    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s; /* Change to speed up or slow down */
-    animation-iteration-count: infinite; /* Never stop waving :) */
-    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
   }
   @keyframes wave-animation {
     0% {
@@ -38,7 +47,7 @@ const Wave = styled.div`
     }
     10% {
       transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
+    }
     20% {
       transform: rotate(-8deg);
     }
@@ -53,7 +62,7 @@ const Wave = styled.div`
     }
     60% {
       transform: rotate(0deg);
-    } /* Reset for the last half to pause */
+    }
     100% {
       transform: rotate(0deg);
     }
