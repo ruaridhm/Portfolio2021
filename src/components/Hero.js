@@ -24,6 +24,8 @@ const Wave = styled.div`
   font-size: 5.5em;
   padding-bottom: 5px;
   padding-right: 10px;
+  user-select: none;
+
   &:hover {
     animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
     animation-duration: 2.5s; /* Change to speed up or slow down */
