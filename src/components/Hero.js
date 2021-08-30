@@ -2,7 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const HeaderShadow = styled.div`
+  z-index: 1;
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  position: relative;
+  top: 0px;
+  left: 0px;
 `
 const Header = styled.header`
   background: linear-gradient(180deg, #37319b, #711bce);
@@ -16,7 +20,8 @@ const Header = styled.header`
   position: relative;
   top: 0px;
   left: 0px;
-  z-index: 1;
+
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 `
 const IntroWrapper = styled.div`
   display: flex;
@@ -75,24 +80,24 @@ const About = styled.p`
 
 const Hero = () => {
   return (
-    // <HeaderShadow>
-    <Header>
-      <IntroWrapper>
-        <Wave>👋</Wave>
-        <Introduction>
-          <span>Hey! I'm Ruaridh McGuckin.</span>
-          <span>A front-end developer.</span>
-          <span>Living in Dublin.</span>
-        </Introduction>
-      </IntroWrapper>
-      <About>
-        Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
-        perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
-        modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
-        minima consectetur.
-      </About>
-    </Header>
-    // </HeaderShadow>
+    <HeaderShadow>
+      <Header>
+        <IntroWrapper>
+          <Wave>👋</Wave>
+          <Introduction>
+            <span>Hey! I'm Ruaridh McGuckin.</span>
+            <span>A front-end developer.</span>
+            <span>Living in Dublin.</span>
+          </Introduction>
+        </IntroWrapper>
+        <About>
+          Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
+          perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
+          modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
+          minima consectetur.
+        </About>
+      </Header>
+    </HeaderShadow>
   )
 }
 
