@@ -13,6 +13,10 @@ const Header = styled.header`
   align-items: center;
   flex-direction: column;
   box-shadow: 10px 10px 5px grey;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 `
 const IntroWrapper = styled.div`
   display: flex;
@@ -71,24 +75,24 @@ const About = styled.p`
 
 const Hero = () => {
   return (
-    <HeaderShadow>
-      <Header>
-        <IntroWrapper>
-          <Wave>👋</Wave>
-          <Introduction>
-            <span>Hey! I'm Ruaridh McGuckin.</span>
-            <span>A front-end developer.</span>
-            <span>Living in Dublin.</span>
-          </Introduction>
-        </IntroWrapper>
-        <About>
-          Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
-          perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
-          modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
-          minima consectetur.
-        </About>
-      </Header>
-    </HeaderShadow>
+    // <HeaderShadow>
+    <Header>
+      <IntroWrapper>
+        <Wave>👋</Wave>
+        <Introduction>
+          <span>Hey! I'm Ruaridh McGuckin.</span>
+          <span>A front-end developer.</span>
+          <span>Living in Dublin.</span>
+        </Introduction>
+      </IntroWrapper>
+      <About>
+        Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
+        perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
+        modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
+        minima consectetur.
+      </About>
+    </Header>
+    // </HeaderShadow>
   )
 }
 

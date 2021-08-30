@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Scroll from "./Scroll"
 
 const StyledFooter = styled.footer`
   clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
@@ -10,8 +9,9 @@ const StyledFooter = styled.footer`
   display: flex;
   padding: 0 6em;
   box-sizing: border-box;
+  position: relative;
+  top: -12vw;
 `
-
 const FooterContent = styled.div`
   display: flex;
   justify-content: center;
@@ -25,7 +25,6 @@ const Footer = () => {
       <FooterContent>
         <p>© 2021, All rights reserved. Generated with Gatsby</p>
       </FooterContent>
-      {/* <Scroll showBelow={250} /> */}
     </StyledFooter>
   )
 }
