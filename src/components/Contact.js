@@ -12,11 +12,9 @@ const SocialLink = styled.a`
   margin: 1em;
   height: 50px;
   width: 50px;
-  color: blue;
-  &:link:visited,
-  :hover,
-  :active {
-    color: blue;
+  transition: transform 0.2s linear;
+  &:hover {
+    transform: translateY(-7px);
   }
 `
 

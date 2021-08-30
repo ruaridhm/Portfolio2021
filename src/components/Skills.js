@@ -34,6 +34,7 @@ const skills = [
   "Git",
   "Node",
   "Express",
+  "Gatsby",
 ]
 
 const Skills = ({ filteredSkills, setFilteredSkills }) => {

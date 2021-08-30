@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Art Archive",
     description:
-      "Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam",
+      "A full stack app (MERN) app designed using Material UI for a local artist to organize his art pieces. Features include image hosting with Cloudinary, Full CRUD support, Collection Statistics, Gallery. ",
     stack: [
       "MongoDb",
       "Express",
@@ -12,13 +12,13 @@ export const projects = [
       "TypeScript",
       "Cloudinary",
     ],
-    sourceCode: "https://github.com",
-    livePreview: "https://github.com",
+    sourceCode: "https://github.com/ruaridhm/Art-Archive",
+    livePreview: "https://edarchive.herokuapp.com/",
   },
   {
     name: "Vinyl Library",
     description:
-      "Vinyl Library is a full stack (MERN) CRUD app. A place to browse, organize and search your record collection",
+      "Vinyl Library is a full stack (MERN) CRUD app. A place to browse, organize and search your record collection utilizing the Discogs api to fetch details and images for your records. Also Includes functionality to sort both your digital and physical collection utilizing a number of common sorting algorithms.",
     stack: [
       "MongoDb",
       "Express",
@@ -29,6 +29,13 @@ export const projects = [
       "Discogs API",
     ],
     sourceCode: "https://github.com/ruaridhm/vinyl-library",
-    livePreview: "https://github.com",
+    livePreview: "https://vinyl-library.herokuapp.com/",
+  },
+  {
+    name: "Portfolio",
+    description: "The page you are looking at! ",
+    stack: ["Gatsby", "React", "Three.js (Vanta.js)", "Styled Components"],
+    sourceCode: "https://github.com/ruaridhm/Portfolio2021",
+    livePreview: "https://www.ruaridhmcguckin.ie/",
   },
 ]
