@@ -25,10 +25,10 @@ const Wave = styled.div`
   padding-bottom: 5px;
   padding-right: 10px;
   &:hover {
-    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s; /* Change to speed up or slow down */
-    animation-iteration-count: infinite; /* Never stop waving :) */
-    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
   }
   @keyframes wave-animation {
     0% {
@@ -36,7 +36,7 @@ const Wave = styled.div`
     }
     10% {
       transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
+    }
     20% {
       transform: rotate(-8deg);
     }
@@ -51,7 +51,7 @@ const Wave = styled.div`
     }
     60% {
       transform: rotate(0deg);
-    } /* Reset for the last half to pause */
+    }
     100% {
       transform: rotate(0deg);
     }
