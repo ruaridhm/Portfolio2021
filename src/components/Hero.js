@@ -78,6 +78,7 @@ const About = styled.p`
   max-width: 450px;
   padding-left: 10em;
   padding-top: 1em;
+  font-family: "Montserrat";
 `
 
 const Hero = () => {

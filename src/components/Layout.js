@@ -11,6 +11,9 @@ const LayoutContainer = styled.div`
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
+  }
+  * {                  
+  font-family: 'Roboto';             
   }`
 
 const Layout = ({ children }) => {

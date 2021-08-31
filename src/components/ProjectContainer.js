@@ -14,6 +14,7 @@ const Project = styled.div`
 `
 const Description = styled.p`
   margin-top: 1em;
+  font-family: "Montserrat";
 `
 const Stack = styled.ul`
   display: flex;
@@ -27,6 +28,7 @@ const StackItem = styled.li`
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
+  font-family: "Montserrat";
 `
 export const StyledA = styled.a`
   position: relative;
