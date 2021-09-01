@@ -88,8 +88,8 @@ const Hero = () => {
         <IntroWrapper>
           <Wave>👋</Wave>
           <Introduction>
-            <span>Hey! I'm Ruaridh McGuckin.</span>
-            <span>A front-end developer.</span>
+            <span>Hey! I'm Ruaridh McGuckin,</span>
+            <span>A front-end developer,</span>
             <span>Living in Dublin.</span>
           </Introduction>
         </IntroWrapper>
