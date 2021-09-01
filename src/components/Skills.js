@@ -39,17 +39,12 @@ const skills = [
 
 const Skills = ({ filteredSkills, setFilteredSkills }) => {
   const handleSetSkill = skill => {
-    console.log("handleSetSkill called")
     if (filteredSkills.includes(skill)) {
-      console.log("true")
-      console.log(skill)
       const skillIndex = filteredSkills.findIndex(element => element === skill)
-      console.log(skillIndex)
-      const newSkillArr = filteredSkills.splice(skillIndex, 1)
-      console.log(newSkillArr)
+      const newSkillArr = [...filteredSkills]
+      newSkillArr.splice(skillIndex, 1)
       setFilteredSkills(newSkillArr)
     } else {
-      console.log("else ,skill added")
       setFilteredSkills(prevState => [...prevState, skill])
     }
   }
