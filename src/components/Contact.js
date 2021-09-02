@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { GithubOutline, EmailOutline } from "@styled-icons/evaicons-outline"
 import { Linkedin } from "@styled-icons/boxicons-logos"
 import Scroll from "./Scroll"
+import { SectionLabel } from "./Skills"
 
 const Section = styled.section`
   display: flex;
@@ -37,7 +38,7 @@ const EmailIcon = styled(EmailOutline)`
 const Contact = () => {
   return (
     <Section id="contact">
-      <h2>&lt;contact&gt;</h2>
+      <SectionLabel>&lt;contact&gt;</SectionLabel>
       <SocialLinks>
         <SocialLink href="http://www.github.com/ruaridhm" target="_blank">
           <GithubIcon />
@@ -53,7 +54,7 @@ const Contact = () => {
           <EmailIcon />
         </SocialLink>
       </SocialLinks>
-      <h2>&lt;/contact&gt;</h2>
+      <SectionLabel>&lt;/contact&gt;</SectionLabel>
       <Scroll showBelow={250} />
     </Section>
   )

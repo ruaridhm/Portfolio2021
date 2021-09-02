@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import ProjectContainer from "./ProjectContainer"
 import { projects } from "../ProjectList"
 import styled from "styled-components"
+import { SectionLabel } from "./Skills"
 
 const ProjectsGrid = styled.div`
   max-width: 1100px;
@@ -57,12 +58,12 @@ const Projects = ({ filteredSkills }) => {
 
   return (
     <section id="projects">
-      <h2>&lt;projects&gt;</h2>
+      <SectionLabel>&lt;projects&gt;</SectionLabel>
       <ProjectsGrid>
         {notFiltered ? <AllProjects /> : <FilteredProjects />}
       </ProjectsGrid>
 
-      <h2>&lt;/projects&gt;</h2>
+      <SectionLabel>&lt;/projects&gt;</SectionLabel>
     </section>
   )
 }
