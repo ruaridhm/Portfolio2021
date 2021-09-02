@@ -24,7 +24,7 @@ const SocialLink = styled.a`
   }
 `
 
-const GithubIcon = styled(GithubOutline)`
+export const GithubIcon = styled(GithubOutline)`
   color: #211f1f;
 `
 const LinkedinIcon = styled(Linkedin)`
@@ -36,7 +36,7 @@ const EmailIcon = styled(EmailOutline)`
 `
 const Contact = () => {
   return (
-    <Section>
+    <Section id="contact">
       <h2>&lt;contact&gt;</h2>
       <SocialLinks>
         <SocialLink href="http://www.github.com/ruaridhm" target="_blank">
