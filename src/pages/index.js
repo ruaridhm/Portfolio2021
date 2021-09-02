@@ -7,7 +7,20 @@ import Contact from "../components/Contact"
 import BackgroundLayer from "../components/BackgroundLayer"
 
 const Home = () => {
-  const [filteredSkills, setFilteredSkills] = useState([])
+  const [filteredSkills, setFilteredSkills] = useState({
+    HTML: false,
+    CSS: false,
+    JavaScript: false,
+    React: false,
+    TypeScript: false,
+    "Material UI": false,
+    "Styled Components": false,
+    MongoDb: false,
+    Git: false,
+    Node: false,
+    Express: false,
+    Gatsby: false,
+  })
 
   return (
     <Layout>
@@ -17,10 +30,7 @@ const Home = () => {
           filteredSkills={filteredSkills}
           setFilteredSkills={setFilteredSkills}
         />
-        <Projects
-          filteredSkills={filteredSkills}
-          setFilteredSkills={setFilteredSkills}
-        />
+        <Projects filteredSkills={filteredSkills} />
 
         <Contact />
       </BackgroundLayer>

@@ -33,7 +33,8 @@ export const projects = [
   },
   {
     name: "Portfolio",
-    description: "The page you are looking at! ",
+    description:
+      "The page you are looking at right now! Built using Gatsby to avail of the benefits of server side rendering such as speed and SEO.",
     stack: ["Gatsby", "React", "Three.js (Vanta.js)", "Styled Components"],
     sourceCode: "https://github.com/ruaridhm/Portfolio2021",
     livePreview: "https://www.ruaridhmcguckin.ie/",
