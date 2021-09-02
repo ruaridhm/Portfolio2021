@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { StyledA } from "./ProjectContainer"
+import { GithubOutline } from "@styled-icons/evaicons-outline"
 
 const StyledNav = styled.nav`
   display: flex;
@@ -74,6 +75,10 @@ const StyledSVG = styled.svg`
   min-height: 30px;
   min-width: 30px;
 `
+const Github = styled(GithubOutline)`
+  height: 30px;
+  width: 30px;
+`
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -83,10 +88,10 @@ const Navbar = () => {
         <LogoText>RM</LogoText>
       </SiteLogo>
       <NavRight>
-        <NavItem href="#About">About</NavItem>
-        <NavItem href="#Projects">Projects</NavItem>
+        <NavItem href="#projects">Projects</NavItem>
+        <NavItem href="#contact">Contact</NavItem>
         <StyledLink href="https://github.com/ruaridhm" target="_blank">
-          Github
+          <Github />
         </StyledLink>
         <IconButton
           onClick={() => {

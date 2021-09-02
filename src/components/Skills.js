@@ -63,7 +63,7 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
   }
 
   return (
-    <section>
+    <section id="skillset">
       <h2>&lt;skillset&gt;</h2>
       <SkillContainer>
         {skills.map((skill, count) => (
