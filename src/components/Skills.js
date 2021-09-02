@@ -30,6 +30,9 @@ const StyledSkill = styled.li`
       box-shadow: 0 0 2px #37319b inset;
     `};
 `
+export const StyledLabel = styled.h2`
+  color: #37319b;
+`
 
 const Skill = ({ onClick, children, active }) => {
   return (
@@ -64,7 +67,7 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
 
   return (
     <section id="skillset">
-      <h2>&lt;skillset&gt;</h2>
+      <StyledLabel>&lt;skillset&gt;</StyledLabel>
       <SkillContainer>
         {skills.map((skill, count) => (
           <Skill
@@ -78,7 +81,7 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
           </Skill>
         ))}
       </SkillContainer>
-      <h2>&lt;/skillset&gt;</h2>
+      <StyledLabel>&lt;/skillset&gt;</StyledLabel>
     </section>
   )
 }
