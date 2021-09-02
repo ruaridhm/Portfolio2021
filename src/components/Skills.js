@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 const SkillContainer = styled.ul`
   list-style: none;
@@ -9,7 +9,9 @@ const SkillContainer = styled.ul`
   max-width: 450px;
   margin: 0 auto;
 `
-const Skill = styled.li`
+
+const StyledSkill = styled.li`
+  box-sizing: border-box;
   cursor: pointer;
   padding: 0.5em 1em;
   margin: 0.5em auto;
@@ -20,7 +22,22 @@ const Skill = styled.li`
   &:hover {
     transform: translateY(-7px);
   }
+  ${props =>
+    props.active &&
+    css`
+      color: #37319b;
+      /* border: 1px solid #37319b; */
+      box-shadow: 0 0 2px #37319b inset;
+    `};
 `
+
+const Skill = ({ onClick, children, active }) => {
+  return (
+    <StyledSkill onClick={onClick} active={active}>
+      {children}
+    </StyledSkill>
+  )
+}
 
 const skills = [
   "HTML",
@@ -39,19 +56,10 @@ const skills = [
 
 const Skills = ({ filteredSkills, setFilteredSkills }) => {
   const handleSetSkill = skill => {
-    console.log("handleSetSkill called")
-    if (filteredSkills.includes(skill)) {
-      console.log("true")
-      console.log(skill)
-      const skillIndex = filteredSkills.findIndex(element => element === skill)
-      console.log(skillIndex)
-      const newSkillArr = filteredSkills.splice(skillIndex, 1)
-      console.log(newSkillArr)
-      setFilteredSkills(newSkillArr)
-    } else {
-      console.log("else ,skill added")
-      setFilteredSkills(prevState => [...prevState, skill])
-    }
+    setFilteredSkills(prevState => ({
+      ...prevState,
+      [skill]: !prevState[skill],
+    }))
   }
 
   return (
@@ -64,6 +72,7 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
             onClick={() => {
               handleSetSkill(skill)
             }}
+            active={filteredSkills[skill]}
           >
             {skill}
           </Skill>
