@@ -20,6 +20,7 @@ const SiteLogo = styled.a`
   align-items: center;
   border: 5px solid black;
   height: 46.5px;
+  min-width: 46.5px;
   transform: rotate(0deg);
   transition: transform 0.4s ease-in-out;
   &:hover {
