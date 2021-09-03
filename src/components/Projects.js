@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import ProjectContainer from "./ProjectContainer"
 import { projects } from "../ProjectList"
 import styled from "styled-components"
@@ -12,8 +12,12 @@ const ProjectsGrid = styled.div`
   grid-gap: 2em;
 `
 
+const FilterWarning = styled.h3`
+  color: #37319b;
+  text-align: center;
+`
+
 const Projects = ({ filteredSkills }) => {
-  // const [filteredProjects, setFilteredProjects] = useState([...projects])
   var notFiltered = true
 
   for (var i in filteredSkills) {
@@ -30,30 +34,25 @@ const Projects = ({ filteredSkills }) => {
   }
   const FilteredProjects = () => {
     const filteredProjects = []
+    const skillArr = []
+
+    for (var i in filteredSkills) {
+      if (filteredSkills[i] === true) {
+        skillArr.push(i)
+      }
+    }
     projects.forEach(project => {
-      let techIncluded = 0
-      let skillCount = 0
-      project.stack.forEach(tech => {
-        if (filteredSkills[tech] === true) {
-          techIncluded += 1
-        }
-        filteredSkills.forEach(skill => {
-          let count = 0
-          if (skill === true) {
-            count++
-          }
-          return count
-        })
-      })
-      if (techIncluded === skillCount) {
+      if (skillArr.every(elem => project.stack.includes(elem))) {
         filteredProjects.push(project)
-      } else {
-        return
       }
     })
-    return filteredProjects.map((project, count) => (
-      <ProjectContainer key={count} project={project} />
-    ))
+    if (filteredProjects.length === 0) {
+      return <FilterWarning>No projects match your filter!</FilterWarning>
+    } else {
+      return filteredProjects.map((project, count) => (
+        <ProjectContainer key={count} project={project} />
+      ))
+    }
   }
 
   return (
