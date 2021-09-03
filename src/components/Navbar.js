@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
   align-items: center;
   width: 100%;
   position: absolute;
-  color: white;
+  color: var(--white);
   z-index: 2;
   height: 5rem;
 `
@@ -18,7 +18,7 @@ const SiteLogo = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid black;
+  border: 5px solid var(--black);
   height: 46.5px;
   min-width: 46.5px;
   transform: rotate(0deg);
@@ -29,7 +29,7 @@ const SiteLogo = styled.a`
   }
 `
 const LogoText = styled.span`
-  color: white;
+  color: var(--white);
   text-decoration: none;
   transform: rotate(0deg);
   transition: transform 0.4s ease-in-out;
@@ -47,13 +47,16 @@ const NavRight = styled.div`
   height: 100%;
 `
 const NavItem = styled(StyledA)`
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 30px;
   margin-right: 10%;
+  &::before {
+    background-color: var(--white);
+  }
 `
 const StyledLink = styled(StyledA)`
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 30px;
   margin-right: 10%;
@@ -70,7 +73,7 @@ const IconButton = styled.button`
   margin-right: 10%;
 `
 const StyledSVG = styled.svg`
-  fill: white;
+  fill: var(--white);
   cursor: pointer;
   min-height: 30px;
   min-width: 30px;

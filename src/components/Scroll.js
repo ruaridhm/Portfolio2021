@@ -26,9 +26,9 @@ const Button = styled.button`
 const ArrowUpIcon = styled(ArrowCircleUpOutline)`
   height: 100%;
   width: 100%;
-  fill: #37319b;
+  fill: var(--mainColor);
   &:hover {
-    fill: #711bce;
+    fill: var(--secondaryColor);
   }
 `
 

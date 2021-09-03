@@ -13,7 +13,7 @@ const ProjectsGrid = styled.div`
 `
 
 const FilterWarning = styled.h3`
-  color: #37319b;
+  color: var(--mainColor);
   text-align: center;
 `
 

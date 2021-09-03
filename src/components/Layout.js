@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
+import "../styles/global.css"
 
 const LayoutContainer = styled.div`
   height: 172vh;
