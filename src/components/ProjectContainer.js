@@ -17,7 +17,7 @@ const Project = styled.div`
 `
 const Description = styled.p`
   margin-top: 1em;
-  font-family: "Montserrat";
+  font-family: var(--ff-secondary);
 `
 const Stack = styled.ul`
   display: flex;
@@ -30,7 +30,7 @@ const StackItem = styled.li`
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  font-family: "Montserrat";
+  font-family: var(--ff-secondary);
 `
 const ProjectLinks = styled.div`
   display: flex;
@@ -48,7 +48,7 @@ export const StyledA = styled.a`
     height: 4px;
     bottom: 0;
     right: 0;
-    background-color: var(--mainColor);
+    background-color: var(--clr-mainColor);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
   }
@@ -61,7 +61,7 @@ const LinkIcon = styled.svg`
   height: 30px;
   width: 30px;
   &:hover {
-    stroke: var(--mainColor);
+    stroke: var(--clr-mainColor);
   }
 `
 

@@ -25,12 +25,12 @@ const StyledSkill = styled.li`
   ${props =>
     props.active &&
     css`
-      color: var(--mainColor);
-      box-shadow: 0 0 2px var(--mainColor) inset;
+      color: var(--clr-mainColor);
+      box-shadow: 0 0 2px var(--clr-mainColor) inset;
     `};
 `
 export const StyledLabel = styled.h2`
-  color: var(--mainColor);
+  color: var(--clr-mainColor);
 `
 
 const Skill = ({ onClick, children, active }) => {

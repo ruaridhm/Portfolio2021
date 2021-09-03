@@ -12,7 +12,7 @@ const StyledForm = styled.form`
   align-self: center;
 `
 const FormTitle = styled.h3`
-  color: var(--mainColor);
+  color: var(--clr-mainColor);
 `
 
 const FormLabel = styled.label`
@@ -29,13 +29,17 @@ const FormTextArea = styled.textarea`
 
 const SubmitButton = styled.button`
   padding: 1em;
-  background: linear-gradient(to right, var(--mainColor) 50%, var(--white) 50%);
+  background: linear-gradient(
+    to right,
+    var(--clr-mainColor) 50%,
+    var(--clr-white) 50%
+  );
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.2s ease-out;
   width: 50%;
   align-self: center;
-  border-color: var(--mainColor);
+  border-color: var(--clr-mainColor);
   &:hover {
     background-position: left bottom;
   }
@@ -43,7 +47,7 @@ const SubmitButton = styled.button`
 const SubmitButtonText = styled.span`
   transition: all 0.2s ease-out;
   ${SubmitButton}:hover & {
-    color: var(--white);
+    color: var(--clr-white);
   }
 `
 

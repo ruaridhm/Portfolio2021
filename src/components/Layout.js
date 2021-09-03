@@ -17,7 +17,7 @@ html {
     margin: 0;
   }
   * {                  
-  font-family: 'Roboto';             
+  font-family: var(--ff-primary);             
   }`
 
 const Layout = ({ children }) => {

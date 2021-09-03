@@ -27,10 +27,10 @@ const SocialLink = styled.a`
 `
 
 export const GithubIcon = styled(GithubOutline)`
-  color: var(--github);
+  color: var(--clr-github);
 `
 const LinkedinIcon = styled(Linkedin)`
-  color: var(--linkedin);
+  color: var(--clr-linkedin);
 `
 const Contact = () => {
   return (

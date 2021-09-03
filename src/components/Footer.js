@@ -4,8 +4,12 @@ import styled from "styled-components"
 const StyledFooter = styled.footer`
   clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
   min-height: 20vh;
-  background: linear-gradient(180deg, var(--mainColor), var(--secondaryColor));
-  color: var(--white);
+  background: linear-gradient(
+    180deg,
+    var(--clr-mainColor),
+    var(--clr-secondaryColor)
+  );
+  color: var(--clr-white);
   display: flex;
   padding: 0 6em;
   box-sizing: border-box;
