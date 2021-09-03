@@ -9,14 +9,14 @@ const HeaderShadow = styled.div`
   left: 0px;
 `
 const Header = styled.header`
-  background: linear-gradient(180deg, #37319b, #711bce);
+  background: linear-gradient(180deg, var(--mainColor), var(--secondaryColor));
   height: 80vh;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px var(--grey);
   position: relative;
   top: 0px;
   left: 0px;
@@ -69,12 +69,12 @@ const Wave = styled.div`
   }
 `
 const Introduction = styled.h1`
-  color: white;
+  color: var(--white);
   display: flex;
   flex-direction: column;
 `
 const About = styled.p`
-  color: white;
+  color: var(--white);
   max-width: 450px;
   padding-left: 10em;
   padding-top: 1em;
