@@ -4,6 +4,7 @@ import { GithubOutline, EmailOutline } from "@styled-icons/evaicons-outline"
 import { Linkedin } from "@styled-icons/boxicons-logos"
 import Scroll from "./Scroll"
 import { StyledLabel } from "./Skills"
+import ContactForm from "./ContactForm"
 
 const Section = styled.section`
   display: flex;
@@ -49,11 +50,8 @@ const Contact = () => {
         >
           <LinkedinIcon />
         </SocialLink>
-
-        <SocialLink href="mailto:ruaridh.mcguckin@gmail.com?subject=Important!">
-          <EmailIcon />
-        </SocialLink>
       </SocialLinks>
+      <ContactForm />
       <StyledLabel>&lt;/contact&gt;</StyledLabel>
       <Scroll showBelow={250} />
     </Section>
