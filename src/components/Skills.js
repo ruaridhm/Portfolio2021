@@ -67,7 +67,7 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
 
   return (
     <section id="skillset">
-      <StyledLabel>&lt;skillset&gt;</StyledLabel>
+      <StyledLabel>&lt;skills&gt;</StyledLabel>
       <SkillContainer>
         {skills.map((skill, count) => (
           <Skill
@@ -81,7 +81,7 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
           </Skill>
         ))}
       </SkillContainer>
-      <StyledLabel>&lt;/skillset&gt;</StyledLabel>
+      <StyledLabel>&lt;/skills&gt;</StyledLabel>
     </section>
   )
 }
