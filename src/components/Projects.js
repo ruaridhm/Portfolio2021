@@ -46,7 +46,7 @@ const Projects = ({ filteredSkills }) => {
         filteredProjects.push(project)
       }
     })
-    if (FilteredProjects.length === 0) {
+    if (filteredProjects.length === 0) {
       return <FilterWarning>No projects match your filter!</FilterWarning>
     } else {
       return filteredProjects.map((project, count) => (
