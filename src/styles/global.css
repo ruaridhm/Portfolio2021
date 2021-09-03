@@ -1,9 +1,12 @@
 :root {
-  --mainColor: #37319b;
-  --secondaryColor: #711bce;
-  --white: #fff;
-  --black: #000;
-  --grey: grey;
-  --github: #211f1f;
-  --linkedin: #0a66c2;
+  --clr-mainColor: #37319b;
+  --clr-secondaryColor: #711bce;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-grey: grey;
+  --clr-github: #211f1f;
+  --clr-linkedin: #0a66c2;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
 }
