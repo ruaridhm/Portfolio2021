@@ -5,6 +5,7 @@ import SkillSet from "../components/Skills"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact/Contact"
 import BackgroundLayer from "../components/BackgroundLayer"
+import { Helmet } from "react-helmet"
 
 const Home = () => {
   const [filteredSkills, setFilteredSkills] = useState({
@@ -24,6 +25,20 @@ const Home = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Ruaridh McGuckin Portfolio</title>
+        <html lang="en" />
+        <meta name="description" content="My personal portfolio" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, 
+      shrink-to-fit=no"
+        />
+        <meta
+          name="keywords"
+          content="ruaridh mcguckin, ruaridh, portfolio, developer, front-end, web developer,front end, web developer, ,frontend, web development, web app, web site development, web app development, freelance web developer, web developer portfolio, react developer, gatsby developer, react, gatsby, javascript developer, dublin, ireland, responsive web developer,  "
+        />
+      </Helmet>
       <Hero />
       <BackgroundLayer>
         <SkillSet

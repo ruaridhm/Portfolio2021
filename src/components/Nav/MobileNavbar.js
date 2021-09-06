@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import { StyledLink, NavItem, Github } from "./Navbar"
+import { Github } from "./Navbar"
 import SiteLogo from "./SiteLogo"
 
 const MenuLinks = styled.nav`
-  display: flex;
+  display: ${({ mobileNav }) => (mobileNav ? "flex" : "none")};
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,8 @@ const MenuLinks = styled.nav`
   top: 0;
   right: 0;
   transition: transform 300ms;
+  position: fixed;
+  overflow-y: hidden;
   transform: ${({ mobileNav }) =>
     mobileNav ? "translateX(0)" : "translateX(100%)"};
 
@@ -71,6 +73,7 @@ const MobileNav = ({ mobileNav, setMobileNav }) => {
             onClick={handleOnClick}
             href="https://github.com/ruaridhm"
             target="_blank"
+            rel="noreferrer"
           >
             <Github />
           </a>

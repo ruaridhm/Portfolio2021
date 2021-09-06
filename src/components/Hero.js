@@ -90,13 +90,6 @@ const Introduction = styled.h1`
     line-height: 2.25rem;
   }
 `
-// const About = styled.p`
-//   color: var(--clr-white);
-//   max-width: 450px;
-//   padding-left: 10em;
-//   padding-top: 1em;
-//   font-family: var(--ff-secondary);
-// `
 
 const Hero = () => {
   return (
@@ -110,12 +103,6 @@ const Hero = () => {
             <span>Living in Dublin.</span>
           </Introduction>
         </IntroWrapper>
-        {/* <About>
-          Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
-          perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
-          modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
-          minima consectetur.
-        </About> */}
       </Header>
     </HeaderShadow>
   )

@@ -46,6 +46,7 @@ const MenuIcon = styled.button`
 const Hamburger = ({ mobileNav, setMobileNav }) => {
   return (
     <MenuIcon
+      aria-label="menu"
       mobileNav={mobileNav}
       onClick={() => {
         setMobileNav(!mobileNav)
