@@ -28,9 +28,8 @@ const Stack = styled.ul`
 `
 const StackItem = styled.li`
   margin: 0.5em;
-  font-weight: 500;
   font-size: 0.8rem;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-secondary-600);
 `
 const ProjectLinks = styled.div`
   padding-top: 2em;
