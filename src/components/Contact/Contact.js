@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import { GithubOutline, EmailOutline } from "@styled-icons/evaicons-outline"
+import { GithubOutline } from "@styled-icons/evaicons-outline"
 import { Linkedin } from "@styled-icons/boxicons-logos"
-import Scroll from "./Scroll"
-import { StyledLabel } from "./Skills"
+import Scroll from "../Scroll"
+import { StyledLabel } from "../Skills"
 import ContactForm from "./ContactForm"
 
 const Section = styled.section`
@@ -22,7 +22,7 @@ const SocialLink = styled.a`
   width: 50px;
   transition: transform 0.2s linear;
   &:hover {
-    transform: translateY(-7px);
+    transform: translateY(-0.438rem);
   }
 `
 

@@ -5,9 +5,15 @@ import * as THREE from "three"
 
 const BackgroundContainer = styled.div`
   margin: 0;
-  padding: 6em 6em 6em 6em;
+  padding: 6em;
   position: relative;
   top: -6vw;
+  @media (max-width: 900px) {
+    padding: 4em;
+  }
+  @media (max-width: 600px) {
+    padding: 2em;
+  }
 `
 
 const BackgroundLayer = ({ children }) => {

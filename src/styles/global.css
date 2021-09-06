@@ -1,3 +1,5 @@
+@import "./typography.css";
+
 :root {
   --clr-mainColor: #37319b;
   --clr-secondaryColor: #711bce;
@@ -7,6 +9,7 @@
   --clr-github: #211f1f;
   --clr-linkedin: #0a66c2;
 
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Montserrat", sans-serif;
+  --ff-primary: "Roboto-400", sans-serif;
+  --ff-secondary: "Montserrat-400", sans-serif;
+  --ff-secondary-600: "Montserrat-600", sans-serif;
 }

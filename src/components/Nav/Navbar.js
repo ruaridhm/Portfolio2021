@@ -1,7 +1,10 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { StyledA } from "./ProjectContainer"
+import { StyledA } from "../ProjectContainer"
 import { GithubOutline } from "@styled-icons/evaicons-outline"
+import SiteLogo from "./SiteLogo"
+import Hamburger from "./Hamburger"
+import MobileNav from "./MobileNavbar"
 
 const StyledNav = styled.nav`
   display: flex;
@@ -12,32 +15,7 @@ const StyledNav = styled.nav`
   z-index: 2;
   height: 5rem;
 `
-const SiteLogo = styled.a`
-  margin: 1em;
-  align-self: flex-start;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid var(--clr-black);
-  height: 46.5px;
-  min-width: 46.5px;
-  transform: rotate(0deg);
-  transition: transform 0.4s ease-in-out;
-  &:hover {
-    transform: rotate(90deg);
-    transition: transform 0.4s ease-in-out;
-  }
-`
-const LogoText = styled.span`
-  color: var(--clr-white);
-  text-decoration: none;
-  transform: rotate(0deg);
-  transition: transform 0.4s ease-in-out;
-  ${SiteLogo}:hover & {
-    transform: rotate(-90deg);
-    transition: transform 0.4s ease-in-out;
-  }
-`
+
 const NavRight = styled.div`
   align-self: flex-end;
   display: flex;
@@ -45,21 +23,36 @@ const NavRight = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
-const NavItem = styled(StyledA)`
+export const NavItem = styled(StyledA)`
   color: var(--clr-white);
   text-decoration: none;
-  font-size: 30px;
-  margin-right: 10%;
+  font-size: 1.875rem;
+  margin-right: 8rem;
   &::before {
     background-color: var(--clr-white);
   }
+  @media (max-width: 900px) {
+    margin-right: 4rem;
+    font-size: 1.5rem;
+  }
 `
-const StyledLink = styled(StyledA)`
+export const StyledLink = styled(StyledA)`
   color: var(--clr-white);
   text-decoration: none;
-  font-size: 30px;
-  margin-right: 10%;
+  font-size: 1.875rem;
+  margin-right: 8rem;
+  &::before {
+    background-color: var(--clr-white);
+  }
+  @media (max-width: 900px) {
+    margin-right: 4rem;
+    font-size: 1.5rem;
+  }
 `
 const IconButton = styled.button`
   width: 30px;
@@ -70,7 +63,10 @@ const IconButton = styled.button`
   align-items: center;
   border: transparent;
   cursor: pointer;
-  margin-right: 10%;
+  margin-right: 8rem;
+  @media (max-width: 900px) {
+    margin-right: 4rem;
+  }
 `
 const StyledSVG = styled.svg`
   fill: var(--clr-white);
@@ -78,18 +74,17 @@ const StyledSVG = styled.svg`
   min-height: 30px;
   min-width: 30px;
 `
-const Github = styled(GithubOutline)`
+export const Github = styled(GithubOutline)`
   height: 30px;
   width: 30px;
 `
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false)
+  const [mobileNav, setMobileNav] = useState(false)
   return (
     <StyledNav>
-      <SiteLogo href="/">
-        <LogoText>RM</LogoText>
-      </SiteLogo>
+      <SiteLogo hover={true} />
       <NavRight>
         <NavItem href="#projects">Projects</NavItem>
         <NavItem href="#contact">Contact</NavItem>
@@ -137,6 +132,8 @@ const Navbar = () => {
           )}
         </IconButton>
       </NavRight>
+      <Hamburger mobileNav={mobileNav} setMobileNav={setMobileNav} />
+      <MobileNav mobileNav={mobileNav} setMobileNav={setMobileNav} />
     </StyledNav>
   )
 }

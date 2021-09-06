@@ -8,25 +8,26 @@ const StyledForm = styled.form`
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   padding: 0 1em 1em 1em;
   margin: 1em;
-  width: 50%;
   align-self: center;
+  width: 50%;
+  @media (max-width: 900px) {
+    width: 70%;
+  }
+  @media (max-width: 900px) {
+    width: 80%;
+  }
 `
 const FormTitle = styled.h3`
   color: var(--clr-mainColor);
 `
-
 const FormLabel = styled.label`
   display: flex;
   flex-direction: column;
   padding-bottom: 1em;
 `
-const HoneyPot = styled.input`
-  display: none;
-`
 const FormTextArea = styled.textarea`
   resize: none;
 `
-
 const SubmitButton = styled.button`
   padding: 1em;
   background: linear-gradient(
@@ -55,8 +56,6 @@ const ContactForm = () => {
   return (
     <StyledForm method="POST" action="https://formspree.io/f/mvoddqbv">
       <FormTitle>Get in touch</FormTitle>
-
-      {/* <HoneyPot type="text" name="_gotcha" /> */}
       <FormLabel>
         Email
         <input type="email" name="_replyto" required />

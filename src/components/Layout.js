@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "./Navbar"
+import Navbar from "./nav//Navbar"
 import Footer from "./Footer"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
@@ -14,7 +14,10 @@ html {
   scroll-behavior: smooth;
 }
   body {
-    margin: 0;
+    margin:0;
+    
+
+    overflow-x: hidden;
   }
   * {                  
   font-family: var(--ff-primary);             
