@@ -88,10 +88,15 @@ const Navbar = () => {
       <NavRight>
         <NavItem href="#projects">Projects</NavItem>
         <NavItem href="#contact">Contact</NavItem>
-        <StyledLink href="https://github.com/ruaridhm" target="_blank">
+        <StyledLink
+          href="https://github.com/ruaridhm"
+          target="_blank"
+          rel="noopener"
+        >
           <Github />
         </StyledLink>
         <IconButton
+          aria-label="Dark Mode"
           onClick={() => {
             setDarkMode(!darkMode)
           }}

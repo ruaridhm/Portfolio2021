@@ -37,14 +37,21 @@ const Contact = () => {
     <Section id="contact">
       <StyledLabel>&lt;contact&gt;</StyledLabel>
       <SocialLinks>
-        <SocialLink href="http://www.github.com/ruaridhm" target="_blank">
-          <GithubIcon />
+        <SocialLink
+          aria-label="Github"
+          href="http://www.github.com/ruaridhm"
+          target="_blank"
+          rel="noopener"
+        >
+          <GithubIcon alt="Github" />
         </SocialLink>
         <SocialLink
+          aria-label="LinkedIn"
           href="https://www.linkedin.com/in/ruaridh-mcguckin-b09809189/"
           target="_blank"
+          rel="noopener"
         >
-          <LinkedinIcon />
+          <LinkedinIcon alt="LinkedIn" />
         </SocialLink>
       </SocialLinks>
       <ContactForm />
