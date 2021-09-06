@@ -33,9 +33,10 @@ const StackItem = styled.li`
   font-family: var(--ff-secondary);
 `
 const ProjectLinks = styled.div`
+  padding-top: 2em;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 `
 
 export const StyledA = styled.a`

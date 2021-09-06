@@ -15,11 +15,11 @@ const Button = styled.button`
   transition: transform 0.2s linear;
   padding: 0;
   background-color: transparent;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   cursor: pointer;
 
   &:hover {
-    transform: translateY(-7px);
+    transform: translateY(-0.438rem);
   }
 `
 

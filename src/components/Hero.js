@@ -34,10 +34,13 @@ const IntroWrapper = styled.div`
 `
 const Wave = styled.div`
   display: inline-block;
-  font-size: 5.5em;
-  padding-bottom: 5px;
-  padding-right: 10px;
+  font-size: 5.5rem;
+  padding-bottom: 0.313rem;
+  padding-right: 0.625rem;
   user-select: none;
+  @media (max-width: 900px) {
+    font-size: 4rem;
+  }
 
   &:hover {
     animation-name: wave-animation;
@@ -76,14 +79,24 @@ const Introduction = styled.h1`
   color: var(--clr-white);
   display: flex;
   flex-direction: column;
+  font-size: 3rem;
+  line-height: 4rem;
+  @media (max-width: 900px) {
+    font-size: 2.5em;
+    line-height: 3rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 2em;
+    line-height: 2.25rem;
+  }
 `
-const About = styled.p`
-  color: var(--clr-white);
-  max-width: 450px;
-  padding-left: 10em;
-  padding-top: 1em;
-  font-family: var(--ff-secondary);
-`
+// const About = styled.p`
+//   color: var(--clr-white);
+//   max-width: 450px;
+//   padding-left: 10em;
+//   padding-top: 1em;
+//   font-family: var(--ff-secondary);
+// `
 
 const Hero = () => {
   return (
@@ -97,12 +110,12 @@ const Hero = () => {
             <span>Living in Dublin.</span>
           </Introduction>
         </IntroWrapper>
-        <About>
+        {/* <About>
           Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis
           perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus
           modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores
           minima consectetur.
-        </About>
+        </About> */}
       </Header>
     </HeaderShadow>
   )
