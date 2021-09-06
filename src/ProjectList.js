@@ -39,4 +39,11 @@ export const projects = [
     sourceCode: "https://github.com/ruaridhm/Portfolio2021",
     livePreview: "https://www.ruaridhmcguckin.ie/",
   },
+  {
+    name: "Youtube Subscriptions Search",
+    description:
+      "Youtube does not offer functionality to search all your subscriptions for search term. You must do it channel by channel. I created a simple react app with the youtube API. To allow for this functionality. It is currently limited to approved users it’s currently being tested and it hasn’t been verified by Google",
+    stack: ["React", "Styled Components", "Youtube API"],
+    sourceCode: "https://github.com/ruaridhm/YouTube-Subscription-Search",
+  },
 ]
