@@ -48,11 +48,7 @@ const BackgroundLayer = ({ children }) => {
       if (vantaEffect) vantaEffect.destroy()
     }
   }, [vantaEffect])
-  return (
-    <>
-      <BackgroundContainer ref={myRef}>{children}</BackgroundContainer>
-    </>
-  )
+  return <BackgroundContainer ref={myRef}>{children}</BackgroundContainer>
 }
 
 export default BackgroundLayer
