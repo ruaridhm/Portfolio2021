@@ -6,27 +6,33 @@ const SkillContainer = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 450px;
+  max-width: 900px;
   margin: 0 auto;
 `
+const SkillListItem = styled.li`
+  padding: 0 1em;
+`
 
-const StyledSkill = styled.li`
+const StyledSkill = styled.button`
   box-sizing: border-box;
   cursor: pointer;
+  font-size: 1em;
   padding: 0.5em 1em;
   margin: 0.5em auto;
   text-align: center;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border: 1px solid var(--clr-black);
+  border-radius: 0.25rem;
   transition: transform 0.2s linear;
   &:hover {
-    transform: translateY(-7px);
+    transform: translateY(-2px);
+    color: var(--clr-mainColor);
+    border-color: var(--clr-mainColor);
   }
   ${props =>
     props.active &&
     css`
       color: var(--clr-mainColor);
-      box-shadow: 0 0 2px var(--clr-mainColor) inset;
+      border-color: var(--clr-mainColor);
     `};
 `
 export const StyledLabel = styled.h2`
@@ -69,15 +75,17 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
       <StyledLabel>&lt;skills&gt;</StyledLabel>
       <SkillContainer>
         {skills.map((skill, count) => (
-          <Skill
-            key={count}
-            onClick={() => {
-              handleSetSkill(skill)
-            }}
-            active={filteredSkills[skill]}
-          >
-            {skill}
-          </Skill>
+          <SkillListItem>
+            <Skill
+              key={count}
+              onClick={() => {
+                handleSetSkill(skill)
+              }}
+              active={filteredSkills[skill]}
+            >
+              {skill}
+            </Skill>
+          </SkillListItem>
         ))}
       </SkillContainer>
       <StyledLabel>&lt;/skills&gt;</StyledLabel>
