@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import SkillSet from "../components/Skills"
@@ -6,8 +6,14 @@ import Projects from "../components/Projects"
 import Contact from "../components/Contact/Contact"
 import BackgroundLayer from "../components/BackgroundLayer"
 import { Helmet } from "react-helmet"
+import ReactGA from "react-ga"
 
 const Home = () => {
+  useEffect(() => {
+    ReactGA.initialize("G-X5FRHZRG2S")
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
+
   const [filteredSkills, setFilteredSkills] = useState({
     HTML: false,
     CSS: false,
