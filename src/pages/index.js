@@ -44,6 +44,15 @@ const Home = () => {
           name="keywords"
           content="ruaridh mcguckin, ruaridh, portfolio, developer, front-end, web developer,front end, web developer, ,frontend, web development, web app, web site development, web app development, freelance web developer, web developer portfolio, react developer, gatsby developer, react, gatsby, javascript developer, dublin, ireland, responsive web developer,  "
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-X5FRHZRG2S"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-X5FRHZRG2S');
+        </script>
       </Helmet>
       <Hero />
       <BackgroundLayer>
