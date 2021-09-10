@@ -14,6 +14,9 @@ module.exports = {
         trackingIds: [
           "G-X5FRHZRG2S", // Google Analytics / GA
         ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
         // This object is used for configuration specific to this plugin
         pluginConfig: {
           // Puts tracking script in the head instead of the body
@@ -22,6 +25,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-helmet`,
+    // `gatsby-plugin-react-helmet`,
   ],
 }

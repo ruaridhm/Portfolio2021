@@ -6,8 +6,11 @@ import Projects from "../components/Projects"
 import Contact from "../components/Contact/Contact"
 import BackgroundLayer from "../components/BackgroundLayer"
 import { Helmet } from "react-helmet"
+import LogRocket from "logrocket"
 
 const Home = () => {
+  LogRocket.init("2n9oqs/art-archive")
+
   const [filteredSkills, setFilteredSkills] = useState({
     HTML: false,
     CSS: false,
