@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
-  min-height: 20vh;
+  min-height: 25vh;
   background: linear-gradient(
     180deg,
     var(--clr-mainColor),
@@ -11,7 +11,7 @@ const StyledFooter = styled.footer`
   );
   color: var(--clr-white);
   display: flex;
-  padding: 0 6em;
+  justify-content: center;
   box-sizing: border-box;
   position: relative;
   top: -12vw;
@@ -20,14 +20,19 @@ const FooterContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 100%;
+  width: 70%;
+`
+const Copyright = styled.p`
+  text-align: center;
 `
 
 const Footer = () => {
   return (
     <StyledFooter>
       <FooterContent>
-        <p>© 2021, All rights reserved. Generated with Gatsby</p>
+        <Copyright>
+          © 2021, All rights reserved. Generated with Gatsby
+        </Copyright>
       </FooterContent>
     </StyledFooter>
   )
