@@ -87,9 +87,8 @@ const Skills = ({ filteredSkills, setFilteredSkills }) => {
       <StyledLabel>&lt;skills&gt;</StyledLabel>
       <SkillContainer>
         {skills.map((skill, count) => (
-          <SkillListItem>
+          <SkillListItem key={count}>
             <Skill
-              key={count}
               onClick={() => {
                 handleSetSkill(skill.title)
               }}

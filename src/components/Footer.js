@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
-  min-height: 25vh;
+  min-height: 100px;
   background: linear-gradient(
     180deg,
     var(--clr-mainColor),
