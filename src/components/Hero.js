@@ -15,6 +15,7 @@ const Header = styled.header`
     var(--clr-secondaryColor)
   );
   height: 80vh;
+  min-height: 300px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
   display: flex;
   justify-content: center;
