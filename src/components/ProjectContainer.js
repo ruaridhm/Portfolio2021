@@ -79,7 +79,11 @@ const ProjectContainer = ({ project }) => {
       )}
       <ProjectLinks>
         {project.sourceCode && (
-          <StyledA href={project.sourceCode} aria-label="source code">
+          <StyledA
+            href={project.sourceCode}
+            aria-label="source code"
+            target="_blank"
+          >
             <LinkIcon
               aria-label="Github"
               viewBox="0 0 256 250"
@@ -97,7 +101,11 @@ const ProjectContainer = ({ project }) => {
           </StyledA>
         )}
         {project.livePreview && (
-          <StyledA href={project.livePreview} aria-label="live preview">
+          <StyledA
+            href={project.livePreview}
+            aria-label="live preview"
+            target="_blank"
+          >
             <LinkIcon
               aria-label="Live Preview"
               xmlns="http://www.w3.org/2000/svg"

@@ -92,6 +92,8 @@ const Navbar = () => {
           href="https://github.com/ruaridhm"
           target="_blank"
           rel="noopener"
+          alt="github"
+          aria-label="github"
         >
           <Github />
         </StyledLink>
