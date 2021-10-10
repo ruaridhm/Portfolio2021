@@ -1,14 +1,17 @@
 @font-face {
   font-family: "Roboto-400";
   src: url("../fonts//Roboto-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat-400";
   src: url("../fonts//Montserrat-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Montserrat-600";
   src: url("../fonts//Montserrat-SemiBold.ttf");
+  font-display: swap;
 }
