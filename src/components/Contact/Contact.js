@@ -41,7 +41,7 @@ const Contact = () => {
           aria-label="Github"
           href="http://www.github.com/ruaridhm"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <GithubIcon alt="Github" />
         </SocialLink>
@@ -49,7 +49,7 @@ const Contact = () => {
           aria-label="LinkedIn"
           href="https://www.linkedin.com/in/ruaridh-mcguckin-b09809189/"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <LinkedinIcon alt="LinkedIn" />
         </SocialLink>
