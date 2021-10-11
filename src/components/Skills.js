@@ -69,7 +69,7 @@ const skills = [
   { src: "/styled-components.svg", title: "Styled-Components" },
   { src: "/mongodb.svg", title: "MongoDb" },
   { src: "/git.svg", title: "Git" },
-  { src: "/node.svg", title: "Node JS" },
+  { src: "/node.svg", title: "Node" },
   { src: "/express.svg", title: "Express" },
   { src: "/gatsby.svg", title: "Gatsby" },
 ]
@@ -77,7 +77,6 @@ const skills = [
 const Skills = ({ filteredSkills, setFilteredSkills }) => {
   const handleSetSkill = skill => {
     setFilteredSkills(prevState => ({
-      ...prevState,
       [skill]: !prevState[skill],
     }))
   }
