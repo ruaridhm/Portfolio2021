@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import SkillSet from "../components/Skills"
 import Projects from "../components/Projects"
+import Experience from "../components/Experience"
 import Contact from "../components/Contact/Contact"
 import BackgroundLayer from "../components/BackgroundLayer"
 import { Helmet } from "react-helmet"
@@ -44,6 +45,7 @@ const Home = () => {
       </Helmet>
       <Hero />
       <BackgroundLayer>
+        <Experience />
         <SkillSet
           filteredSkills={filteredSkills}
           setFilteredSkills={setFilteredSkills}
