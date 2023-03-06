@@ -59,6 +59,11 @@ const MobileNav = ({ mobileNav, setMobileNav }) => {
           <SiteLogo hover={false} />
         </li>
         <li>
+          <a onClick={handleOnClick} href="#experience">
+            Experience
+          </a>
+        </li>
+        <li>
           <a onClick={handleOnClick} href="#projects">
             Projects
           </a>

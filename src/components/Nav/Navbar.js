@@ -86,6 +86,7 @@ const Navbar = () => {
     <StyledNav>
       <SiteLogo hover={true} />
       <NavRight>
+        <NavItem href="#experience">Experience</NavItem>
         <NavItem href="#projects">Projects</NavItem>
         <NavItem href="#contact">Contact</NavItem>
         <StyledLink
