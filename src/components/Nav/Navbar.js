@@ -98,7 +98,7 @@ const Navbar = () => {
         >
           <Github />
         </StyledLink>
-        <IconButton
+        {/* <IconButton
           aria-label="Dark Mode"
           onClick={() => {
             setDarkMode(!darkMode)
@@ -138,7 +138,7 @@ const Navbar = () => {
               </g>
             </StyledSVG>
           )}
-        </IconButton>
+        </IconButton> */}
       </NavRight>
       <Hamburger mobileNav={mobileNav} setMobileNav={setMobileNav} />
       <MobileNav mobileNav={mobileNav} setMobileNav={setMobileNav} />
