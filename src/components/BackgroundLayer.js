@@ -13,6 +13,9 @@ const BackgroundContainer = styled.div`
   @media (max-width: 600px) {
     padding: 2em;
   }
+  @media (max-width: 400px) {
+    padding: 0;
+  }
 `
 
 const BackgroundLayer = ({ children }) => {

@@ -13,6 +13,9 @@ const Experience = styled.div`
   &:hover {
     transform: translateY(-7px);
   }
+  @media (max-width: 400px) {
+    padding: 0
+  }
 `
 const Description = styled.ul`
   margin-top: 1em;
